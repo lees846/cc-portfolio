@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shayla Lee | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1><a href="index.html">Shayla Lee</a></h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a> Lost and Found</li>
+        <li>Project <a href="p2.html">#2</a> Face Generator</li>
+        <li>Project <a href="p3.html">#3</a> Experimental Clock</li>
+        <li>Project <a href="p4.html">#4</a> Exquisite Corpse</li>
+        <li>Project <a href="p5.html">#5</a> Optical Illusion</li>
+        <li>Project <a href="p6.html">#6</a> Data Portrait</li>
+        <li>Project <a href="p7.html">#7</a> Autobiographical Game</li>
+        <li>Project <a href="p8.html">#8</a> Experimental Camera</li>
+        <li>Project <a href="p9.html">#9</a> Consentful Interface</li>
+        <li>Project <a href="p10.html">#10</a> Sousveillance Tool</li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+        Happy Man Silhouette
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+      <div class="fullwidth">
+         <iframe width="400" height="400" src="https://preview.p5js.org/lees846/embed/tkOLblgzq"></iframe>
+      </div>
+      <a href="https://editor.p5js.org/lees846/sketches/tkOLblgzq">Link to Code Sketch</a>
+        <!-- 3. write a short description to describe what the work is about -->
+      <p>
+        ID: An orange background with a silhouetted head which's direction and size is changed with the mouse position. The eye, ear, nose, chin, shoulder, head, and mouth shapes change slightly each time it's clicked.
+      </p>
+      <div>
+        <h1>
+          Description
+        </h1>
+
+          <p>
+            In this project, we were tasked with creating an interactive face generator using the random function, user-defined variables, and mousePressed() and/or keyPressed().
+          </p>
+
+        <!-- 4. reflection -->
+        <h1>
+          Design Process
+        </h1>
+
+        <p>
+          Before jumping straight into coding, part of the assignment this week was sketching out our plan for the face, and illustrate the minimum and maximum scale of our design. Initially, I imagined the scale being on a range of human to goblin-like, as shown below: 
+        </p>
+
+        <img src="https://cdn.glitch.com/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FFaceGeneratorSketchMin.png?v=1631564755157" alt="The first stage of the code plan. A grid with a blue square and the profile silhouette of a face with round teeth and a smooth chin.">
+        <img src="https://cdn.glitch.com/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FFaceGeneratorSketchMax.png?v=1631564753525" alt="The second stage of the code plan. A grid with a blue square and the profile silhouette of a face with pointy teeth and ear, a sharp chin, and a long nose.">
+
+        <p>
+          My main concept was counting on the ability to soften the points of triangles with relation to mouseX and mouseY, however I found that the triangle function doesn’t take arguments for this function, so I decided to change my idea a bit. I maintained the silhouetted look as well as the profile view, but I realized I liked the simplicity and randomness of a sketch that changes the same characters’ features when the mouse is clicked, and I abandoned the goblin idea.
+        </p>
+        <p>
+          I started by hard-coding values into the sketch to create a base for the generator, and I ended up with something that I could manipulate the scale and direction it faced using my mouse position, however the random features were re-generated every frame (see example sketch below). 
+        </p>
+          <iframe width="400" height="400" src="https://preview.p5js.org/lees846/embed/22GtrBfMO"></iframe>
+        <a href="https://editor.p5js.org/lees846/sketches/22GtrBfMO">Link to Code</a>
+        <p>
+          ID: A lower framerate version of the face generator that constantly cycles through different faces.
+        </p>
+        </div> 
+        <p>
+          I still wanted to make the features only change when the mouse was pressed, but liked the code I’d made so far so I duplicated the document, pulled out a bunch of components, and figured out how to refactor and reorganize with variables and a separate function.
+        </p>
+        <p>
+          Here’s the test-sketch of isolated components:
+        </p>
+          <iframe width="400" height="400" src="https://preview.p5js.org/lees846/embed/d4v4nWWqc"></iframe>
+        <a href="https://editor.p5js.org/lees846/sketches/d4v4nWWqc">Link to Code</a>
+        <p>
+          ID: A simplified silhouette with the resizing mechanics when the mouse is moved, and initial shape change when the mouse is clicked.
+        </p>
+        <p>
+          Lastly, I applied the variable format to my official sketch. 
+        </p>
+
+        <!-- <div class="fullwidth">
+          <img
+            src="https://cdn.glitch.com/87836090-8683-448f-a8fb-3af0c0f82bac%2Fworksheets-03.png?v=1598505804708"
+          />
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </p> -->
+
+        <!-- 4. reflection -->
+        <h1>
+          Reflection
+        </h1>
+
+        <p>
+          I enjoyed working on this assignment. I like to see how the challenges posed by coding change my initial concepts and force me in a new and unexpected direction that is often more interesting. I think the result is fun to play around with, and I am now way more comfortable with push(), pop(), translate(), and scale(). These functions are fairly new to me, but I used them frequently in this sketch and I think it was successful. 
+        </p>
+        <p>
+          If I were to continue working on this project, I would probably try to implement keyPressed() as a means of taking a screenshot of the character that was generated. (If I had that function in the sketch, I would make sure to put a note somewhere that indicates how to use the function.) I also would want to try adding some buttons to change the background color, maybe as well as some animation, sound, or other effect when the mouse is pressed to indicate an action has occurred.
+        </p>
+
+        <!-- 5. reflection -->
+        <h1>
+          Credits
+        </h1>
+
+        <p>
+          This sketch was created in the <a href = editor.p5js.org>Online p5.js Editor</a>. I referred to the <a href = p5js.org/reference/>p5.js Reference Library</a> as well as my code final last year <a href = https://github.com/lees846/SP21-PUFY1225-DIGITAL-CRAFT/blob/main/js/sketchesFinal/reflectColor.js>on Github</a>. 
+        </p>
+    </div>
+  </body>
+</html>
