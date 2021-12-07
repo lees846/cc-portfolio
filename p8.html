@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shayla Lee | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1><a href="index.html">Shayla Lee</a></h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a> Lost and Found</li>
+        <li>Project <a href="p2.html">#2</a> Face Generator</li>
+        <li>Project <a href="p3.html">#3</a> Experimental Clock</li>
+        <li>Project <a href="p4.html">#4</a> Exquisite Corpse</li>
+        <li>Project <a href="p5.html">#5</a> Optical Illusion</li>
+        <li>Project <a href="p6.html">#6</a> Data Portrait</li>
+        <li>Project <a href="p7.html">#7</a> Autobiographical Game</li>
+        <li>Project <a href="p8.html">#8</a> Experimental Camera</li>
+        <li>Project <a href="p9.html">#9</a> Consentful Interface</li>
+        <li>Project <a href="p10.html">#10</a> Sousveillance Tool</li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+        Near-Sighted
+      </h1>
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+      <iframe
+        allow="camera"
+        width="750 px"
+        height="600 px"
+        src="https://editor.p5js.org/lees846/full/1XyDyhaIQ"
+      ></iframe>
+      <a href="https://editor.p5js.org/lees846/sketches/1XyDyhaIQ">Link to Code Sketch</a>
+      <p>
+        ID: This sketch shows mirrored footage from your webcam but blurred with overlapping circles.
+      </p>
+      </div>
+
+       <!-- 3. write a short description to describe what the work is about --> 
+
+      <h1> 
+        Description 
+      </h1> 
+      <p> 
+        The experimental camera project was our first chance to make a tool out of a code sketch. We had to make a live video filter using createCapture() and some kind of array/reference to the pixel array in our code. 
+      </p> 
+
+      <h1> 
+        Design Process 
+      </h1> 
+
+        <p> When I was brainstorming for this assignment, I originally started to think about my personal vision. As illustrated in the brainstorm below, I considered 3 different things: 1) I tend to search for faces in my surroundings. 2) I sometimes feel like my eyes are melting from screen time. And 3) I am near sighted. Ultimately, I decided to explore my nearsightedness in order to try to find a way to try to convey what the world looks like to me without my glasses.</p> 
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FECBrainstormFull.jpg?v=1637208537588" alt="A sketchbook page with sketches for filter ideas and notes including pseudo code for the assignment."> 
+        <p>I am heavily reliant on my glasses and contacts, and I have been for most of my life. The difference in my vision when I can see clearly versus when it’s unaided by lenses is something I have always considered with curiosity, however I spend most of my life with focused eyes and rarely explore how my world looks without these vision correcting tools. I wanted to begin exploring my vision, particularly the blurring effect, which occurs. Beyond that, I wanted to see if I could figure out how to make light halos larger to further replicate my vision, but I decided to start with blurring.</p> 
+        <p>In order to try to understand how to manipulate the pixel array, I edited a code sketch by Dan Schiffman from his <a href="https://www.youtube.com/watch?v=rNqaw8LT2ZU">11.4 Brightness Mirror</a> tutorial. For this sketch I decided to take a different route in the topic of glasses and consider the red and blue combination of old 3D glasses. I learned about looping through each pixel and where to assign variables for the process, etc., and I remixed it into the sketch below:</p> 
+        <iframe src="https://editor.p5js.org/lees846/full/cM7doeJLd" 
+          allow="camera"
+          width="640 px"
+          height="480 px">
+        </iframe>
+        <a href="https://editor.p5js.org/lees846/sketches/cM7doeJLd">Link to Code Sketch</a>
+        <p>ID: A p5js sketch which shows layered red and blue squares for each pixel of the sketch (brighter areas have larger squares and darker areas are closer to black). A slider determines the ratio of red to blue.</p>
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2F3DImagesLayout1.jpg?v=1637072356732" alt="Images from my webcam in various poses using a red and blue filter">
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2F3DImagesLayout2.jpg?v=1637072356681" alt="More images from my webcam in various poses using a red and blue filter">
+      
+        <p>From there I felt comfortable attempting my original idea for the camera. I decided to simplify my goal to just focus on creating a blurring effect, and that proved to be a significant challenge on its own. I tried to articulate in my head and in pseudo code what I needed to do in order to create a blurred effect (as I couldn’t find any tutorials to start with online). My idea was to create overlapping and diffused shapes that borrowed from the camera's live pixel array and map each one into a larger space (allowing for a lack of definition and a blending effect with lower opacity).</p> 
+        <p>By cycling through the final sketch at the top of the page, you can run through the stages and experiments I went through to achieve the final camera filter (the third “scene”). The first is what it looked like when I figured out how to source single pixels at a time based on the mouse position. If you press enter, the next version the result of iterating that source circle into a grid that expands outward from the mouse position. Each consecutive version takes longer to load and refresh and is pretty taxing to the computer, especially in the final which is a filter that softly pixelates the whole video feed with a controllable size of each circle (via a slider) which is like a focus adjustment. I was pleased to discover that this version also creates an enlarged light effect which I had originally planned to code but happens naturally.</p> 
+        <p>Here are some photos of this filter in in use:</p> 
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FSubjects.jpg?v=1637209914360" alt="3 images showing my filter applied to me normally, with a flashlight, and then just Gregg.">
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FCloseBiggerThings.jpg?v=1637209920464" alt="2 images of my filter applied to slightly more complex objects, on the left my fridge with magnets and on the right my plants.">
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FSpaces.jpg?v=1637209916325" alt="2 images of spaces captured through the filter, on the left is my living room and the right is my desk from across my bedroom.">
+        
+      
+      <h1> 
+        Reflection 
+      </h1> 
+        <p>This filter is meant to be used on any kind of subject, however I think my favorite applications were of spaces. It is fairly accurate in mimicking the effect of nearsightedness, which is particularly relevant when viewing an environment or something that is not directly in front of you or “in range”. While it is accurate for filtering spatial imagery, I think there’s also something to be said for capturing people or more direct subjects or objects. When I’m not using any products to aid my vision, even faces become blurred beyond recognition, and there’s a point where people cease to have eyes and other significant facial features that I depend on for identification and communicational queues. </p> 
+        <p>I think this camera, although not a direct translation, starts to help someone with “perfect sight” visualize what it would look like to not be able to identify places, navigational queues, and faces that aren’t close to their eyes. It adds anonymity and ambiguity to every subject it captures, and not in a harsh-edged pixilated way, but in a form that is more softly simplified.</p> 
+        <p>I learned a lot about interacting with the pixel array through this assignment as well as what it’s like to make something out of an input I have no control over. Creating an unconventional camera has made me think about camera filters versus image filters (the order in which an alteration is made to the image/video) and how p5 has built-in options for one and not the other. It’s interesting that I have made a filter, which is defined as a kind of artificial alteration to a pure representation of what the world looks like, to reflect the way I see naturally, and not the other way around. It makes me wonder about baselines that are set for physical abilities and what it would be like if the “clear” camera was the filter instead of the blur.</p> 
+  
+      <h1> 
+        Credits 
+      </h1> 
+        <p>I used a variety of sketches and videos from Dan Schiffman’s “The Code Train” as well as Xin Xin and Katherine’s tutorials.</p>  
+
+    </div>  
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shayla Lee | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1><a href="index.html">Shayla Lee</a></h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a> Lost and Found</li>
+        <li>Project <a href="p2.html">#2</a> Face Generator</li>
+        <li>Project <a href="p3.html">#3</a> Experimental Clock</li>
+        <li>Project <a href="p4.html">#4</a> Exquisite Corpse</li>
+        <li>Project <a href="p5.html">#5</a> Optical Illusion</li>
+        <li>Project <a href="p6.html">#6</a> Data Portrait</li>
+        <li>Project <a href="p7.html">#7</a> Autobiographical Game</li>
+        <li>Project <a href="p8.html">#8</a> Experimental Camera</li>
+        <li>Project <a href="p9.html">#9</a> Consentful Interface</li>
+        <li>Project <a href="p10.html">#10</a> Sousveillance Tool</li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+         COVID Time
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          width="600px"
+          height="600px"
+          src="https://preview.p5js.org/lees846/embed/ySlBBmDeI"
+        ></iframe>
+        <a href="https://editor.p5js.org/lees846/sketches/ySlBBmDeI">Link to Code Sketch</a>
+      <p>
+        ID: Six white squares with red banners on top show the date (Oct 06 to Oct 11 respectively) on a pale blue background. When you hover over one, it displays an overlapping list of times from that day.
+      </p>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+The Data Portrait Project prompted us to track the data of a personal habit for a week and create a representation of that data in an animated code sketch.      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+        <p>
+          For my personal data, I wanted to track something relevant to this current point in time, something that would be interesting to look back on. I think it’s fair to say that the most pressing topic of the times is COVID-19, and the way we are interacting with this situation in society is something that will be unique to this moment in history. Sometimes I wonder how embedded the pandemic really is in our lives, and thus I decided to keep notes on when I heard, read, or saw something covid related (with the exception of the number of people wearing masks on the street).
+        </p>
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FBrainstorm1_Data.jpg?v=1634079553871" alt="A sketchbook page full of data. There is a box for each day and it numbers and lists the instances I interacted with something COVID-19 related.">
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FBrainstorm2.jpg?v=1634079552745" alt="A sketchbook page with a sketch of the format for the calendar code idea. Each square has circles in it and there's a key for understanding the colors located below the calendar boxes.">
+     
+        <p> 
+          Once I had six days’ worth of data, I did an analysis of the information I had collected. There were a fair number of instances in a day that I had noted. If I got around 6 hours of sleep each night, there would be approximately one instance of interaction with COVID related data for every other waking hour in those 6 days (around 108 hours of awake time). The longest list had 12 units while the shortest one had 6, and there was an average of 9 pieces of data per day. Each bit of information had a time of day, the format in which I heard the information (website, sign, email, etc.), and the topic of the information (vaccination, masking, exposure, general info, etc.).
+        </p>
+        <p>
+          I decided I wanted to create a visual indication of the number of data points per day I had collected as well as something that scrolls through the times that I noted. Although I didn’t figure out how to make something that scrolls through each time stamp every 0.3 seconds or so, I was able to organize the data into arrays and create some interaction that shows each day’s data in a vertically overlapped depiction of each time. The time ended up also indicating, visually, how long each list was.
+        </p>
+
+      
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+        <p>
+          The data I collected was interesting in that I expected to have generated more data points per day. This set was taken from a particularly busy week when I was spending a lot of time in my apartment, and this created less opportunities to interact with society in a way that makes obvious the amount of focus there is on this topic in day-to-day life. That being said, I think it’s interesting it reached me as much as it did when I was studying and otherwise relatively isolated. I think this is partially due to social media which is constantly passing bits of information or society to anyone who isn’t directly interacting with others.
+        </p>
+        <p>
+          I don’t feel like this data is truly representative of what I was trying to track. In fact, I continued to track this same data several days after the assignment with more scrutiny, and this resulted in significantly more data points (22, 16, 15 for the first 3 days).
+        </p>
+        <p>
+          This project taught me a bit about how I interact with my surroundings. I think these numbers were as low as they were because I was looking past things, and I wasn’t fully paying attention to the signs I would pass on the street, for example, because a lot of things have become invisible to me. After reflecting on the data then continuing to track it, I was more apt to pick up on all the things that have to do with COVID. I think it shows how deeply integrated this topic has become in our society and within myself.
+        </p>
+        <p>
+          On another note, I feel that my sketch is incomplete due to my programming knowledge upon the point of approaching this project. I think this assignment would have been significantly easier/cleaner and further along in its development if I had known how to code objects in p5 (which we are learning now). I also feel that the final sketch, while using a clean graphic, does not exist in an appropriate mood or format for my concept, and I think this is partially due to the need to simplify and categorize data in order to display it legibly. It forces certain components to get lost in the visualization that may have been crucial in the data itself. I hope to continue tracking this data and to revisit it for a more thorough visualization in the future.
+        </p>
+
+
+      <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+      
+        <p>
+          My partner is a computer science major, and he took a look at my code and reorganized it in the context of objects to see if it was possible to create the scrolling effect I had originally planned for. Through this method, we created a version that better reflected how I wanted the sketch animation to behave, however I was not familiar enough with the final code to use it as a demonstration of my final sketch.
+        </p>
+        <iframe 
+          width="600px"
+          height="600px"
+          src="https://preview.p5js.org/lees846/embed/O4eTv8388x"
+        ></iframe>
+      <a href="https://editor.p5js.org/lees846/sketches/O4eTv8388x">Link to Code</a>
+      <p>
+        ID: This sketch has the same layout as the first one, but instead of stacking the times it plays through them in order in the white portion of each square. 
+      </p>
+    </div>
+  </body>
+</html>
+

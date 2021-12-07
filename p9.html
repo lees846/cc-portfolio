@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shayla Lee | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1><a href="index.html">Shayla Lee</a></h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a> Lost and Found</li>
+        <li>Project <a href="p2.html">#2</a> Face Generator</li>
+        <li>Project <a href="p3.html">#3</a> Experimental Clock</li>
+        <li>Project <a href="p4.html">#4</a> Exquisite Corpse</li>
+        <li>Project <a href="p5.html">#5</a> Optical Illusion</li>
+        <li>Project <a href="p6.html">#6</a> Data Portrait</li>
+        <li>Project <a href="p7.html">#7</a> Autobiographical Game</li>
+        <li>Project <a href="p8.html">#8</a> Experimental Camera</li>
+        <li>Project <a href="p9.html">#9</a> Consentful Interface</li>
+        <li>Project <a href="p10.html">#10</a> Sousveillance Tool</li>
+      </ul>
+    </div>
+
+<!-- main content -->
+    <div class="content">
+      <h1>
+        Near-Sighted With Options
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          width="600px"
+          height="800px"
+          src="https://editor.p5js.org/lees846/full/o-YIJWqDJ"
+        ></iframe>
+        <a href="https://editor.p5js.org/lees846/sketches/o-YIJWqDJ">Link to Code Sketch</a>
+        <p> ID: An interface that provides options for the consent to the browser’s use of a user’s webcam. The starting screen is gray with white text.</p>
+      </div>
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1> 
+        Description 
+      </h1> 
+
+      <p>For the Consentful Interface Assignment, the goal was to give the user power over their data and the ability to use our Experimental Camera with fully informed consent. We were to model our interface considering the “F.R.I.E.S.” (freely given, reversible, informed, enthusiastic, specific) method of consent-giving. </p> 
+
+      <h1>
+        Design Process
+      </h1> 
+
+        <p>In my Experimental Camera project, the sketch fundamentally needs camera access in order to run the program. I started analyzing how I could make the interface more consentful for this next project in my flow chart. The chart illustrates an extensive arrangement of potential paths that, when applied to the camera filter, can create a much more consentful interface. </p>
+
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FCIFlowChart.jpg?v=1638338480266" alt="A sketchbook flow-chart outlining an ideal consentful interface for my experimental camera project."> 
+
+        <p>I considered each piece of FRIES when creating the flow chart. The user is first informed of the sketch’s function, that it would require access to the user’s camera, and that the footage would only be streamed through the sketch and stay local. Then they would be given three options; yes use my camera, no don’t use my camera, and why (with regard to not wanting to provide access). They would be informed right from the beginning and have the option to dig into further information. They can choose to participate fully and allow (reversible) camera access to use the sketch, however if they wish to not, or to no longer, provide camera access, they would have the option to see images and videos demonstrating my use of the filter as an alternative. Reading about the project on my CC Portfolio would also be an option I would link to.</p>  
+
+        <p>Here are some sketches I did of what the pages would look like:</p> 
+
+        <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FInterfaceSketch.jpg?v=1638338480293" alt="Four rectangles drawn in a sketchbook illustrating the main menu, yes, no, and why options for the interface."> 
+
+        <p>I decided to focus on reversible camera access as well as the “third option” portion of the flow chart I created to provide a way for a user to participate without camera access instead of being blocked completely from the experience of the camera for not consenting to it.</p> 
+
+        <p>My final interface has a start screen that describes the sketch in html (which is legible to a screen-reader unlike the “text()” function in p5). It uses DOM element buttons throughout. For the two initial choices, one button brings the user to part of the code with the camera filter sketch, and one brings them to the alternate. The camera sketch includes a button to remove camera access (which pauses the video feed) and a button that returns to the main menu. The alternate includes a video I’ve taken, as explained above, as well as a link to my portfolio below the sketch and a “Return to Main Menu” button.</p> 
+
+      
+      <h1> Reflection </h1> 
+
+        <p>I think I was still able to address each aspect of FRIES in the simplified version of my sketch I produced. Even though I didn’t include all of the information in a third option as I planned to in the flow-chart, I addressed the important parts of it in the intro to the interface when it’s initially loaded (this covers the “I” of FRIES, informed). I was particularly focused on the aspect of the sketch that asks for camera access in a way that prevents it from feeling coercive, which is included in the “F” of FRIES, freely given. I thought a lot about the Zoom interface, where you will be notified at the beginning of a call if it is being recorded and the only options are “be recorded” or “leave call”. This is an unreasonable set of options as you must either fully participate or be completely excluded. One option is potentially to the detriment to your privacy or contrary to your (enthusiastic, “E” in FRIES) consent to being recorded, and the other is exclusive. I wanted to avoid the coercive feel and really emphasize that the user is allowed to choose not to provide their camera access.</p> 
+
+        <p>I also considered the “R” in FRIES, allowing someone to change their mind and giving them the ability to reverse their consent, and I cover the “S”, specific, in the way I introduce the sketch. I was also sure to note the transfer to a different webpage that will occur when a user clicks the link to my CC portfolio. I think I was able to keep the interface transparent and that the user would know exactly what they’re getting into.</p> 
+
+        <p>Designing the user flow of this interface with the user specifically in mind was an interesting experience for me. I am not very familiar to UI/UX design, but I feel I have a new appreciation for the process of creating an interface, and I wish more platforms considered the effect what they’re creating has on the user to recontextualize their interaction with it. I think the internet would feel a lot more comfortable and potentially retain more privacy, which we have a right to.</p> 
+
+     
+      <h1>
+        Credits
+      </h1>
+
+      <p>
+        I created the camera toggle function directly referencing code in <a href="https://editor.p5js.org/xinxin/sketches/7-uwMzV06">this sketch by Xin Xin</a>.
+      </p>
+    </div>
+  </body>
+</html>

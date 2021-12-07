@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shayla Lee | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1><a href="index.html">Shayla Lee</a></h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a> Lost and Found</li>
+        <li>Project <a href="p2.html">#2</a> Face Generator</li>
+        <li>Project <a href="p3.html">#3</a> Experimental Clock</li>
+        <li>Project <a href="p4.html">#4</a> Exquisite Corpse</li>
+        <li>Project <a href="p5.html">#5</a> Optical Illusion</li>
+        <li>Project <a href="p6.html">#6</a> Data Portrait</li>
+        <li>Project <a href="p7.html">#7</a> Autobiographical Game</li>
+        <li>Project <a href="p8.html">#8</a> Experimental Camera</li>
+        <li>Project <a href="p9.html">#9</a> Consentful Interface</li>
+        <li>Project <a href="p10.html">#10</a> Sousveillance Tool</li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+        Plant Clock
+      </h1>
+      <!-- 2. embed your p5 sketch -->
+    <div class="full-width">
+     <iframe width="600px" height="600px" src="https://preview.p5js.org/lees846/embed/6xNVAgg4w"></iframe>
+    </div>
+      <a href="https://editor.p5js.org/lees846/sketches/6xNVAgg4w">Link to Code Sketch</a>
+      <!-- 3. write a short description to describe what the work is about -->
+      <p>
+        ID: A sky blue background with a brown block for the ground. In the center there are leaves on 2 symmetrical vines and on the ground a white rectangle inches across the screen.
+      </p>
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        The challenge for this assignment was to use the hour(), minute(), and second() or millis() functions to create a clock that tells time in a different way than we’re used to.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+
+      <p>
+        I had a lot of ideas initially: 
+      </p>
+      <img src="https://cdn.glitch.com/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FInitialThumbnails.jpg?v=1632255679221" alt="A sketchbook page with 4 thumbnails and some code notes. There is a book, a plant, a candle that burns in a circle, and a series of water collecters.">
+      <p>
+        Ultimately, I decided that I wanted to make a plant-based code, with one stalk for am, one for pm, and a leaf that would show up for each complete hour. Then the plant would form a loop when the time of day reaches 24 hours. I started by hard coding the complete sketch, and what it would look like at 24 hours.
+      </p>
+      <p>
+        Then I broke it down into components that I wanted to show or not show conditionally. While I was working, as well as in between sessions, I did some additional sketching and brainstorming: 
+      </p>
+      <img src="https://cdn.glitch.com/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FProcessSketches.jpg?v=1632255679386" alt="A sketchbook page with more polished sketches for the "Plant clock" idea. It shows code layers, locations, and strategies.">
+      <p>
+        This helped me identify some strategies I was familiar with that could be used to execute my idea in code. I was just starting to use bezier functions, for example, and borrowed and adapted one from someone else’s code (see credits), and thus I wasn’t ready to make a line that grew. Instead, I realized I could also just reveal something already drawn by moving a shape that covers it, and that’s how I went about making the vine “grow”. 
+      </p>
+      <p>
+        I had a couple of other p5.js “scrap sketches” to experiment with colors and blendModes, creating individual components (like the little inch worm at the bottom of the sketch), and just to initially play with the time functions. Those are as follows: 
+      </p>
+      <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/6HXCb04Wa"></iframe>
+      <a href="https://editor.p5js.org/lees846/sketches/6HXCb04Wa">Link to Code</a>
+      <p>
+        ID: This sketch has three low opacity ellipses and one diamond shape on the left oriented between them. They grow, change color, and overlap depending on what time it is.
+      </p>
+      <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/-C0E8r8z5"></iframe>
+      <a href="https://editor.p5js.org/lees846/sketches/-C0E8r8z5">Link to Code</a>
+      <p>
+        ID: Another sketch using opacity, blend modes, and timers. There's 3 stationary rectangles, one square that moves up every minute, and a rectangle that moves right every second.
+      </p>
+      <p>
+        I didn’t use all the components I experimented with, but I felt more comfortable with the ones I did use after trying them in isolated situations. 
+      </p>
+
+      <!-- <div class="fullwidth">
+        <img
+          src="https://cdn.glitch.com/87836090-8683-448f-a8fb-3af0c0f82bac%2Fworksheets-03.png?v=1598505804708"
+        />
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p> -->
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        In “Time” class in First Year, I explored many different aspects of the concept “time”. During this project, however, I had the opportunity to view code as a means to produce different visual representations of time, and that’s something I had never considered before. I thought about things that take time, and I was inspired by my house plants. I found myself getting lost staring at the code sketch as it was “growing”, much like I would with my own plants, and while time was happening it simultaneously stopped. My plants help me take a break and care for something else that’s alive, and while you don’t have to water the plant in the sketch, I think I managed to capture a similar quality. 
+      </p>
+      <p>
+        There were many things, however, that I would love to continue to try to do should I work on this sketch further. For example, I wish my process of drawing the leaves was cleaner (I used 24 conditional statements to ensure they were drawn at the proper time of day). I think I would have really benefited from knowing how to code the leaves into objects or use a for loop. I also wanted to add some kind of growing effect using scale() so that they would have an animated arrival instead of just appearing each hour. I feel that I could have also better represented minutes in the sketch and had initially planned for some sort of bulbs popping up each minute of the hour. I think that would better indicate that unit of time passing. The last big component I felt my sketch lacked was something that added to the sense of completion at 24 hours, a background color change, or some sort of distinction between the times of day that was not an object. 
+      </p>
+      <p>
+        Even though I feel like I kind of cheated with the conditionals and the way the vines grow, I’m proud of the sketch I produced, and it was a lot closer to my initial idea than I thought I was capable of producing.
+      </p>
+
+      <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+      <p>
+        I used the general formatting of the leaf from <a href= https://www.sunwangshu.com/fall-2015/icm/icm-week-03/>Wangshu Sun's code</a> in order to learn how to use the bezier function, which I was able to use sequentially for other pieces of my code :) 
+      </p>
+    </div>
+  </body>
+</html>

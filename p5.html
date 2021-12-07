@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shayla Lee | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1><a href="index.html">Shayla Lee</a></h1>
+      <ul>
+        <li>Project <a href="p1.html">#1</a> Lost and Found</li>
+        <li>Project <a href="p2.html">#2</a> Face Generator</li>
+        <li>Project <a href="p3.html">#3</a> Experimental Clock</li>
+        <li>Project <a href="p4.html">#4</a> Exquisite Corpse</li>
+        <li>Project <a href="p5.html">#5</a> Optical Illusion</li>
+        <li>Project <a href="p6.html">#6</a> Data Portrait</li>
+        <li>Project <a href="p7.html">#7</a> Autobiographical Game</li>
+        <li>Project <a href="p8.html">#8</a> Experimental Camera</li>
+        <li>Project <a href="p9.html">#9</a> Consentful Interface</li>
+        <li>Project <a href="p10.html">#10</a> Sousveillance Tool</li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <h1>
+        Concert Geometries
+      </h1>
+
+      <!-- 2. embed your p5 sketch -->
+
+      
+        <!-- below width and height refers to the dimensions of your sketch-->
+      <div>
+      <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/ZD7DT2Fp-"></iframe>
+      <a href="https://editor.p5js.org/lees846/sketches/ZD7DT2Fp-">Link to Code Sketch</a>      
+      <p>
+        ID: A black frame with horizontal lines falling down the screen. In the front are bright lines that meet at the mouse's position, and clicking a key adds two more sets of lines of different color that move and overlap in fun grids.
+      </p>
+      </div>
+      <div>
+      <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/SDcuogAuN"></iframe>
+      <a href="https://editor.p5js.org/lees846/sketches/SDcuogAuN">Link to Code Sketch</a>
+      <p>
+        ID: This sketch has the same mechanics, but the lines leave a path that slowly dissolves into the next color. When the mouse stops moving, it creates a pattern, and clicking changesthe colors.
+      </p>
+      </div>
+        
+        <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        The Optical Illusion Assignment prompted us to consider our culture and its relative patterns and to create an optical illusion, an interactive and animated interpretation of these patterns. 
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+      <div>
+        <p> 
+          I started with an analysis of my cultural background. I divided it into two sections: my heritage, and customs from my upbringing. There was some obvious overlap, especially because playing cards, which was always mine and a family favorite, was both a part of my French-Canadian roots as well as my American cultural upbringing. I also looked into the parts of my culture that were less tied to a particular origin of people and was reminded of concerts.  
+        </p> 
+
+        <p> 
+          I’ve been fascinated with the ability to create a light-like effect in p5js sketches, and I wanted to continue that exploration as well as experiment with the lasers that add so much character to the live music shows that I really miss. 
+        </p> 
+
+        <p>  
+          Here are my brainstorming sketches: 
+        </p> 
+      </div>
+      <img src="https://cdn.glitch.me/e5a1683d-28e0-4118-b934-bc0d1e91445c%2FIllusionBrainstorm.jpg?v=1633389634445" alt="A sketchbook page with sketches of lasers, cards, and a cribbage board as well as code notes, and some mind maps about my culture."> 
+      <div>
+        <p> 
+          After picking which idea I wanted to further develop digitally, I began writing the code for my laser design. I had to do some troubleshooting in a separate sketch (see below) in order to make the lines behind the main lasers move down the screen continuously. Once I figured out how to loop the drawing of the lines and make them move simultaneously, I had a baseline sketch. 
+        </p> 
+      </div>
+        <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/CqZvMnarYs"></iframe>
+       <a href="https://editor.p5js.org/lees846/sketches/CqZvMnarYs">Link to Code Sketch</a>
+      <p>
+        ID: An isolated falling lines sketch (separate from the lasers).
+      </p>
+      <p> 
+        I continued to add layers of interactivity to the sketch, imagining different ways to allow the patterns to form and overlap. I made a version where the layers were inverses of each other. I felt like I was moving in the right direction, but also that the user experience had very limited variation and little room to experiment with. 
+      </p> 
+
+        <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/fH7xIUJBK"></iframe> 
+      <a href="https://editor.p5js.org/lees846/sketches/fH7xIUJBK">Link to Code Sketch</a>
+      <p>
+        ID: This is the same as the first sketch, except the set of lines inthe front move opposite to the mouse's y position instead of up and down on its own.
+      </p>
+      <p> 
+        Ultimately I came up with two different versions that you have seen at the top of this post. The first implements a p5 concept called “noise,” which I felt fit the illusions both visually and thematically with regard to conceptualizing concerts. I enjoyed that this version would move independently of the user and constantly make new shapes regardless of whether the user is actively moving their mouse. It’s mesmerizing and I feel that it evokes the feeling of an optical illusion.  
+      </p> 
+
+      <p>  
+        Here is that sketch again: 
+      </p> 
+
+      <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/ZD7DT2Fp-"></iframe> 
+      <a href="https://editor.p5js.org/lees846/sketches/ZD7DT2Fp-">Link to Code Sketch</a>
+      <p>
+        ID: This is the same sketch as the first one shown. A key press creates a self-moving central set of lasers, and the one that moves with the mouse has a mirrored version.
+      </p>
+      <p> 
+        Lastly, I think my favorite experiment, and the most interactive of the sketches, is the one that leaves a path when the lasers are drawn. This one has an essence of expiration and forces the user to play with new patterns and colors. If the mouse is still too long, the background dissolves all but what is currently being drawn by the mouse, and it held my attention the longest. 
+      </p> 
+
+      <iframe width="600" height="600" src="https://preview.p5js.org/lees846/embed/SDcuogAuN"></iframe> 
+      <a href="https://editor.p5js.org/lees846/sketches/SDcuogAuN">Link to Code Sketch</a>
+      <p>
+        ID: This is the same as the second sketch on the page that leaves the path of the lines behind the mouse.
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+     <p> 
+      I enjoyed exploring different solutions and iterations of this project. While I think the noise-based sketch is more true to the concert displays I’ve seen, something is definitely lost in the process of translating these lasers into a format that can be displayed on a screen. One of the major differences is what influences the lasers. While at a concert, the lights are informed (whether they’re pre-programmed or live) by the audio queues put forth by the music, however in these sketches the user becomes the music in some ways. They are very receptive sketches and require user input that strays from what they traditionally represent. 
+    </p> 
+
+    <p>  
+      A major factor in this transformation is the context in which it is shown, as an optical illusion. This is made for tricking and engaging the eye as opposed to visualizing music in a live and three-dimensional space. While the sketches lack the full body experiences that concerts bring their audience, I think I’ve created an adequately inspired ode to the elaborate geometries that decorate the live music scene. 
+    </p> 
+
+      <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+
+      <p> 
+        I referred frequently to the <a href = p5js.org/reference/>p5.js Reference Library</a> for both the noise function and for some general information on formatting text when it’s displayed in the p5 canvas.  
+      </p> 
+    </div>
+  </body>
+</html>
